@@ -1,0 +1,84 @@
+PROJET HACKATON FAIT TA BA
+
+
+Moi - Dev fait tout
+Jonathan - Dev Web
+Baptiste - Chef de PROJET
+Yassim - 
+Yina - 
+Armel - 56 ans, invalidité, mise en conformité handicap
+
+Contraste, bien voir, pas de "Cliquer là" faut que ça soit clair.
+Lien social, site central.
+50/65 (plus d'enfants, encore actifs ou invalidité, veulent pouvoir sortir le soir ou se réunir sur des thématiques "jeunes", rétro, etc)
++ de 65 = pas à l'aise avec info, besoin de repères en ville, besoin d'aller les chercher dans leur zn de confort
+Personnes isolées
+
+
+Idées code :
+- 
+
+PARTIR DU MUST HAVE
+Est-ce que on commence par développer la méthode ou l'interface ? Utilisabilité. 
+Problématique majeure : une appli pour tout le monde, soit deux applis / écrans pour les deux profils.
+Investiseur préfèrent User Friendly au fonctionnel.
+
+Bénévole :
+- Création de profil / login
+- Préférences géo / dates / autres
+
+
+BDD :
+
+## Utilisateur
+- id
+- Nom STRING
+- Prénom STRING
+- rôle STRING
+- photo PNG/JPG/OTHER
+- birthdate DATE
+- telephone NUM
+- Username STRING
+- groupe STRING (entreprise)
+- mail - STRING
+- password - STRING (crypté)
+- adresse 1 - STRING
+- adresse 2 - STRING
+- CODE POSTAL - NUM
+- description - LONG STRING
+- ## si Senior ou Bénévole
+	- spécifités (handicap, autre) STRING TABLE
+	- animaux STRING TABLE
+	- intérêts STRING TABLE
+	- véhiculé BOOLEAN
+
+
+## Mission
+- Créateur -> UTILISATEUR.ID
+- sous-profil (senior) -> SOUS-PROFIL.ID
+- Titre STRING
+- Catégorie / Sous-catégorie -> CATEGORIE.ID
+- date DATE 
+- heure HOUR
+- temps estimé STRING ???
+- description STRING
+- véhiculé STRING
+- endroit ???
+- propositions de bénévoles et status acceptés / refusés TABLEAU DE STRINGS
+- récurence (pour le futur)
+- 
+
+##	CATEGORIE
+- id
+- Nom
+- icone
+
+
+Catégories
+- Nom
+- Points
+
+Senior
+Bénévole
+Assos / CCAS
+
