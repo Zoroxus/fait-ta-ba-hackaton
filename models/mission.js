@@ -42,7 +42,7 @@ const missionSchema = mongoose.Schema({
     description: String,
     vehicule: { type: Boolean, required: true},
     place: { type: String, required: true},
-    code: { type: String, required: true, unique: true},
+    code: { type: String, required: true},
     confirmed : [{ type: String }],
     status : { type: Number, required: false},
     points : { type: Number, required : false},
