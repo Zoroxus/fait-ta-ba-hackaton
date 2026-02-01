@@ -13,6 +13,19 @@ exports.getOneMission = (req, res, next) => {
         .catch((error) => res.status(404).json({error: error}));
 };
 
+exports.getOneMissionDate = (req, res, next) => {
+    Mission.findOne({ _id: req.params.id})
+        .then((oneMission) => { res.status(200).json(oneMission.date);})
+        .catch((error) => res.status(404).json({error: error}));
+};
+
+exports.getOneMissionHour = (req, res, next) => {
+    Mission.findOne({ _id: req.params.id})
+        .then((oneMission) => { res.status(200).json(oneMission.heure);})
+        .catch((error) => res.status(404).json({error: error}));
+};
+
+
 
 exports.createMission = (req, res, next) => {
 
